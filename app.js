@@ -13,7 +13,7 @@ app.use("/", todoRoutes);
 
 const startServer = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI");
+    await mongoose.connect(process.env.MONGO_URI);
     console.log("✅ MongoDB connected successfully");
 
     const PORT = process.env.PORT;
